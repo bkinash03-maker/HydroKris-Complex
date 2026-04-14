@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="light" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kontakt – Hydrokris-Complex</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "inverse-surface": "#2e3132",
+                    "on-surface-variant": "#44474d",
+                    "primary-fixed": "#d5e3ff",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-dim": "#d9dadb",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#e7e8e9",
+                    "background": "#f8f9fa",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#321300",
+                    "surface-bright": "#f8f9fa",
+                    "primary": "#021934",
+                    "secondary": "#994700",
+                    "on-primary-fixed": "#051c37",
+                    "primary-container": "#1a2e4a",
+                    "surface-variant": "#e1e3e4",
+                    "on-primary-fixed-variant": "#344765",
+                    "on-error-container": "#93000a",
+                    "outline": "#74777e",
+                    "on-secondary-container": "#632c00",
+                    "on-primary-container": "#8296b7",
+                    "outline-variant": "#c4c6ce",
+                    "inverse-on-surface": "#f0f1f2",
+                    "primary-fixed-dim": "#b4c7eb",
+                    "tertiary-container": "#630007",
+                    "surface-container": "#edeeef",
+                    "surface": "#f8f9fa",
+                    "on-tertiary-container": "#ff5e56",
+                    "surface-tint": "#4c5f7e",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#930010",
+                    "surface-container-low": "#f3f4f5",
+                    "on-tertiary-fixed": "#410003",
+                    "on-secondary-fixed-variant": "#743400",
+                    "secondary-fixed": "#ffdbc8",
+                    "secondary-fixed-dim": "#ffb68b",
+                    "inverse-primary": "#b4c7eb",
+                    "tertiary": "#3c0003",
+                    "on-surface": "#191c1d",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#ff8429",
+                    "tertiary-fixed-dim": "#ffb3ac",
+                    "on-background": "#191c1d",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-secondary": "#ffffff"
+                },
+                "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+                },
+                "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+                }
+            },
+        },
+    }
+</script>
+<style>
+    body { font-family: 'Inter', sans-serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+</style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+    <a href="index.html" class="text-xl font-black tracking-tighter text-slate-900">Hydrokris-Complex</a>
+    <nav class="hidden md:flex items-center space-x-8 font-inter tracking-tight font-medium text-sm">
+        <a class="text-slate-600 hover:text-slate-900 transition-all duration-300 hover:opacity-80" href="index.html">Strona główna</a>
+        <a class="text-slate-600 hover:text-slate-900 transition-all duration-300 hover:opacity-80" href="o-firmie.html">O firmie</a>
+        <a class="text-slate-600 hover:text-slate-900 transition-all duration-300 hover:opacity-80" href="uslugi.html">Usługi</a>
+        <a class="text-orange-600 font-bold border-b-2 border-orange-600 transition-all duration-300 hover:opacity-80" href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="flex items-center space-x-4">
+        <a href="tel:889868188" class="hidden md:flex items-center px-5 py-2.5 bg-primary text-on-primary rounded-lg text-sm font-bold transition-all duration-300 scale-95 active:scale-90">
+            Zadzwoń teraz
+        </a>
+        <span class="material-symbols-outlined text-primary text-2xl">emergency_home</span>
+    </div>
+</div>
+<div class="bg-slate-200/20 h-[1px]"></div>
+</header>
+
+<main class="flex-grow pt-24">
+<!-- Hero Contact Header -->
+<section class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+    <div class="relative overflow-hidden rounded-xl bg-primary-container p-8 md:p-16 mb-12">
+        <div class="relative z-10 max-w-2xl">
+            <span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-[0.65rem] font-bold tracking-widest uppercase rounded-sm mb-4">Kontakt</span>
+            <h1 class="text-4xl md:text-6xl font-headline font-black tracking-tighter text-white leading-tight">Skontaktuj się z nami</h1>
+            <p class="mt-6 text-on-primary-container text-lg leading-relaxed max-w-lg">
+                Jesteśmy do Twojej dyspozycji w Krakowie i okolicach. Zapewniamy profesjonalne wsparcie techniczne oraz całodobowe pogotowie instalacyjne.
+            </p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Left Column: Info -->
+        <div class="lg:col-span-5 space-y-12">
+            <!-- Direct Action Card -->
+            <div class="bg-surface-container-low rounded-xl p-8 transition-all hover:bg-surface-container duration-300">
+                <label class="block text-[0.7rem] font-bold tracking-widest text-secondary uppercase mb-6">Bezpośredni kontakt</label>
+                <div class="space-y-8">
+                    <a class="group flex items-center space-x-6" href="tel:889868188">
+                        <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined">call</span>
+                        </div>
+                        <div>
+                            <p class="text-sm text-on-surface-variant font-medium">Zadzwoń do nas</p>
+                            <p class="text-2xl font-black text-primary tracking-tight">889 868 188</p>
+                        </div>
+                    </a>
+                    <div class="flex items-center space-x-6">
+                        <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <div>
+                            <p class="text-sm text-on-surface-variant font-medium">Napisz wiadomość</p>
+                            <p class="text-lg font-bold text-primary tracking-tight">kontakt@hydrokris.pl</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-6">
+                        <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+                            <span class="material-symbols-outlined">location_on</span>
+                        </div>
+                        <div>
+                            <p class="text-sm text-on-surface-variant font-medium">Nasze biuro</p>
+                            <p class="text-lg font-bold text-primary tracking-tight">ul. Przemysłowa 12, Kraków</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hours Section -->
+            <div class="bg-primary text-white rounded-xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/10 -mr-8 -mt-8 rounded-full blur-2xl"></div>
+                <h3 class="text-xl font-bold tracking-tight mb-6 flex items-center">
+                    <span class="material-symbols-outlined mr-3 text-secondary-container">schedule</span>
+                    Godziny pracy
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center py-2 border-b border-white/10">
+                        <span class="text-on-primary-container text-sm">Poniedziałek – Piątek</span>
+                        <span class="font-bold">8:00 – 18:00</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-white/10">
+                        <span class="text-on-primary-container text-sm">Sobota</span>
+                        <span class="font-bold">9:00 – 14:00</span>
+                    </div>
+                    <div class="flex justify-between items-center py-4 px-4 bg-tertiary-container rounded-lg mt-4 border border-on-tertiary-container/30">
+                        <div class="flex items-center">
+                            <span class="material-symbols-outlined mr-3 text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">emergency_share</span>
+                            <span class="font-black text-on-tertiary-container uppercase tracking-widest text-xs">Pogotowie Techniczne</span>
+                        </div>
+                        <span class="font-black text-white text-lg tracking-tighter">24 / 7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Form -->
+        <div class="lg:col-span-7">
+            <div class="bg-white rounded-xl p-8 md:p-12 shadow-[0_40px_80px_-15px_rgba(2,25,52,0.06)] border border-outline-variant/10">
+                <h2 class="text-2xl font-bold text-primary tracking-tight mb-8">Wyślij zapytanie</h2>
+                <form class="space-y-6" onsubmit="handleSubmit(event)">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-[0.7rem] font-bold tracking-widest text-primary uppercase ml-1">Imię i nazwisko</label>
+                            <input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary transition-all outline-none text-on-surface" placeholder="Jan Kowalski" type="text" required/>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[0.7rem] font-bold tracking-widest text-primary uppercase ml-1">Telefon</label>
+                            <input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary transition-all outline-none text-on-surface" placeholder="+48 000 000 000" type="tel"/>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-[0.7rem] font-bold tracking-widest text-primary uppercase ml-1">Email</label>
+                            <input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary transition-all outline-none text-on-surface" placeholder="twoj@email.pl" type="email"/>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[0.7rem] font-bold tracking-widest text-primary uppercase ml-1">Rodzaj usługi</label>
+                            <div class="relative">
+                                <select class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary transition-all outline-none text-on-surface appearance-none">
+                                    <option>Hydraulika</option>
+                                    <option>Elektryka</option>
+                                    <option>Gaz</option>
+                                    <option>Ogrzewanie</option>
+                                    <option>Klimatyzacja</option>
+                                    <option>Awaria</option>
+                                </select>
+                                <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline">keyboard_arrow_down</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[0.7rem] font-bold tracking-widest text-primary uppercase ml-1">Wiadomość</label>
+                        <textarea class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary transition-all outline-none text-on-surface resize-none" placeholder="Opisz swoje zlecenie lub problem..." rows="5"></textarea>
+                    </div>
+                    <button class="w-full bg-secondary-container text-on-secondary-container py-4 rounded-lg font-black tracking-widest uppercase text-sm shadow-lg shadow-secondary-container/20 hover:scale-[1.02] active:scale-95 transition-all" type="submit">
+                        Wyślij wiadomość
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="mt-12">
+    <div class="h-[400px] w-full bg-surface-container-high relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary/5 pointer-events-none z-10"></div>
+        <img class="w-full h-full object-cover grayscale opacity-60 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG7v45gciIH4olzq-aqXni0pvh57BZS9d07bbv90t0ypM-XpPRxeLHothFiKFsmY6v3yxR4uBs7OKDEy5TBybqyDu4XeD082tXrincmCS-ta54S_YPE3l2Hn_xUDzijO_m0aIO-rdNUCfboQtYEB1GVgfKXoGFrlsolnPQQRcXpbX-SghoXfoBc4KlAYBtUlOFenfWR1RJVyK0onD2SSuGVdQtq9QmHG70RXvxkGs6u8zU98kMGrt05k2CbiwEuIjbp5vEbfgjEFc" alt="Mapa Krakowa"/>
+        <div class="absolute inset-0 flex items-center justify-center z-20">
+            <div class="bg-white/95 backdrop-blur-sm p-6 rounded-xl shadow-2xl border border-primary/10 max-w-xs text-center">
+                <div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container mx-auto mb-4">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">push_pin</span>
+                </div>
+                <h4 class="font-black text-primary tracking-tight">Nasza siedziba</h4>
+                <p class="text-sm text-on-surface-variant mt-2">Kraków, ul. Przemysłowa 12</p>
+                <a class="inline-block mt-4 text-secondary text-xs font-bold uppercase tracking-widest border-b-2 border-secondary/20 hover:border-secondary transition-all" href="https://maps.google.com/?q=Kraków,+ul.+Przemysłowa+12" target="_blank" rel="noopener">Otwórz w Mapach</a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-auto bg-slate-100 border-t border-slate-200">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div class="space-y-4">
+            <p class="text-lg font-bold text-slate-900">Hydrokris-Complex</p>
+            <p class="text-sm leading-relaxed text-slate-500 max-w-xs">
+                Profesjonalne instalacje i pogotowie techniczne dla Twojego domu i biznesu. Działamy z pasją od lat.
+            </p>
+        </div>
+        <div class="flex flex-col space-y-3">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary opacity-50 mb-2">Szybkie linki</span>
+            <a class="text-slate-500 hover:text-orange-500 transition-colors duration-200 text-sm leading-relaxed" href="index.html">Strona główna</a>
+            <a class="text-slate-500 hover:text-orange-500 transition-colors duration-200 text-sm leading-relaxed" href="uslugi.html">Usługi</a>
+            <a class="text-slate-500 hover:text-orange-500 transition-colors duration-200 text-sm leading-relaxed" href="#">Polityka prywatności</a>
+            <a class="text-slate-500 hover:text-orange-500 transition-colors duration-200 text-sm leading-relaxed" href="#">Regulamin</a>
+        </div>
+        <div class="flex flex-col md:items-end justify-between">
+            <div class="flex space-x-4">
+                <a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="#">
+                    <span class="material-symbols-outlined text-xl">share</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="#">
+                    <span class="material-symbols-outlined text-xl">thumb_up</span>
+                </a>
+            </div>
+            <p class="text-sm leading-relaxed text-slate-500 mt-6 md:mt-0">
+                © 2024 Hydrokris-Complex. Wszelkie prawa zastrzeżone.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type="submit"]');
+    btn.textContent = 'Wysłano! Odezwiemy się wkrótce.';
+    btn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+    btn.classList.add('bg-primary', 'text-white');
+    btn.disabled = true;
+}
+</script>
+</body></html>

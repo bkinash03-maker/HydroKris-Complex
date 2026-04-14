@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Usługi – Hydrokris-Complex</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "inverse-surface": "#2e3132",
+                    "on-surface-variant": "#44474d",
+                    "primary-fixed": "#d5e3ff",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-dim": "#d9dadb",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#e7e8e9",
+                    "background": "#f8f9fa",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#321300",
+                    "surface-bright": "#f8f9fa",
+                    "primary": "#021934",
+                    "secondary": "#994700",
+                    "on-primary-fixed": "#051c37",
+                    "primary-container": "#1a2e4a",
+                    "surface-variant": "#e1e3e4",
+                    "on-primary-fixed-variant": "#344765",
+                    "on-error-container": "#93000a",
+                    "outline": "#74777e",
+                    "on-secondary-container": "#632c00",
+                    "on-primary-container": "#8296b7",
+                    "outline-variant": "#c4c6ce",
+                    "inverse-on-surface": "#f0f1f2",
+                    "primary-fixed-dim": "#b4c7eb",
+                    "tertiary-container": "#630007",
+                    "surface-container": "#edeeef",
+                    "surface": "#f8f9fa",
+                    "on-tertiary-container": "#ff5e56",
+                    "surface-tint": "#4c5f7e",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#930010",
+                    "surface-container-low": "#f3f4f5",
+                    "on-tertiary-fixed": "#410003",
+                    "on-secondary-fixed-variant": "#743400",
+                    "secondary-fixed": "#ffdbc8",
+                    "secondary-fixed-dim": "#ffb68b",
+                    "inverse-primary": "#b4c7eb",
+                    "tertiary": "#3c0003",
+                    "on-surface": "#191c1d",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#ff8429",
+                    "tertiary-fixed-dim": "#ffb3ac",
+                    "on-background": "#191c1d",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-secondary": "#ffffff"
+                },
+                "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+                },
+                "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+                }
+            },
+        },
+    }
+</script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .technical-gradient { background: radial-gradient(circle at top left, #1a2e4a, #021934); }
+    .ghost-border { border: 1px solid rgba(196, 198, 206, 0.15); }
+    body { font-family: 'Inter', sans-serif; }
+</style>
+</head>
+<body class="bg-surface text-on-background">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+    <a href="index.html" class="text-xl font-black tracking-tighter text-slate-900">Hydrokris-Complex</a>
+    <div class="hidden md:flex gap-8 items-center">
+        <a class="font-inter tracking-tight font-medium text-sm text-slate-600 hover:text-slate-900 transition-all duration-300" href="index.html">Strona główna</a>
+        <a class="font-inter tracking-tight font-medium text-sm text-slate-600 hover:text-slate-900 transition-all duration-300" href="o-firmie.html">O firmie</a>
+        <a class="font-inter tracking-tight font-medium text-sm text-orange-600 font-bold border-b-2 border-orange-600 transition-all duration-300" href="uslugi.html">Usługi</a>
+        <a class="font-inter tracking-tight font-medium text-sm text-slate-600 hover:text-slate-900 transition-all duration-300" href="kontakt.html">Kontakt</a>
+    </div>
+    <div class="flex items-center gap-4">
+        <a href="tel:889868188" class="bg-primary text-on-primary px-5 py-2 text-sm font-medium transition-all duration-300 hover:opacity-80">
+            Zadzwoń teraz
+        </a>
+        <span class="material-symbols-outlined text-primary">emergency_home</span>
+    </div>
+</div>
+<div class="bg-slate-200/20 h-[1px]"></div>
+</nav>
+
+<main class="pt-24 pb-20">
+<!-- Hero Header Section -->
+<header class="max-w-7xl mx-auto px-6 mb-16 mt-12">
+    <div class="relative overflow-hidden bg-primary-container rounded-xl p-12 md:p-20 technical-gradient">
+        <div class="relative z-10 max-w-2xl">
+            <span class="text-secondary-container tracking-[0.2em] font-bold uppercase mb-4 block text-xs">Profesjonalizm w każdym detalu</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tighter leading-[1.1] mb-6">Nasze Usługi</h1>
+            <p class="text-on-primary-container text-lg leading-relaxed max-w-xl">
+                Łączymy inżynierską precyzję z pasją do rzemiosła. Zapewniamy kompleksowe rozwiązania instalacyjne dla nowoczesnych domów i obiektów przemysłowych.
+            </p>
+        </div>
+        <div class="absolute right-0 top-0 h-full w-1/3 opacity-20 hidden lg:block">
+            <img class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPm_dOQ6G3n12UP6uakcXlxnlqHRDRCUWJ9gCXw_0JDfkcHv7DeOSOVSAU4941_qGT8ETiRlfucYMQZDABBHbMq8PSFkJkRrYetaLt9A9p5VPWF7jr-wP3ls3q30b86gZ5BLbZ8zjRedAXCfvs4DW5R6uIIcBreSDgSdi74RkUgJhUjZd1rqrYsxIKJEukTtCd5zMwD1li9JOfBlIUlXB5gMibLzz847sbY2-lxaISeMglEUCHDWmPDniaNzEAsBKNcIxtopd3kbI" alt="Blueprint"/>
+        </div>
+    </div>
+</header>
+
+<!-- Services Grid - Bento Style -->
+<section class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <!-- Hydraulika (Large Item) -->
+        <div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 md:p-12 transition-all duration-500 hover:bg-surface-container hover:shadow-lg ghost-border flex flex-col md:flex-row gap-8">
+            <div class="flex-1">
+                <span class="material-symbols-outlined text-5xl text-secondary mb-6 block">plumbing</span>
+                <h2 class="text-3xl font-bold text-primary mb-4 tracking-tight">Hydraulika</h2>
+                <p class="text-on-surface-variant leading-relaxed mb-6">Kompleksowe instalacje wodno-kanalizacyjne projektowane z myślą o trwałości na pokolenia. Nasze rozwiązania gwarantują bezawaryjność i higienę wody w całym obiekcie.</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center gap-3 text-sm text-on-surface"><span class="w-1.5 h-1.5 bg-secondary-container rounded-full inline-block"></span> Projektowanie i montaż instalacji wod-kan</li>
+                    <li class="flex items-center gap-3 text-sm text-on-surface"><span class="w-1.5 h-1.5 bg-secondary-container rounded-full inline-block"></span> Modernizacja pionów kanalizacyjnych</li>
+                    <li class="flex items-center gap-3 text-sm text-on-surface"><span class="w-1.5 h-1.5 bg-secondary-container rounded-full inline-block"></span> Montaż armatury i ceramiki sanitarnej</li>
+                </ul>
+                <a href="kontakt.html" class="inline-block bg-secondary-container text-on-secondary-container px-8 py-3 font-bold text-sm rounded-md shadow-sm transition-transform hover:scale-105 active:scale-95">Zamów usługę</a>
+            </div>
+            <div class="flex-1 rounded-lg overflow-hidden hidden md:block">
+                <img class="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD09pO4Q_KNqrSb92lUNijrJGmh9w4jTVWbxIdWgAJrPTAu6vEyzQS6dh9mID3qFppzSvCWh_DDuoUAYznqgzGwCkKOHfxtbSvhLdSmbALo1LMGyu-EBMoLCva0u7dMJLrGQMVC-AVDvu32Q_3O_WfKjMsyeaWmCQWLdIaYYh7a1za6218wUU-wvY1TOg1VkiM7Di4c_xkHBKTh-pB8IeYnMbYu9tD98r8X74TgrIML3-XB5xF2n0cdiUDCB7yLBWMx_mZEBMe0nVY" alt="Hydraulika"/>
+            </div>
+        </div>
+        <!-- Elektryka -->
+        <div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-8 transition-all duration-500 hover:bg-surface-container-low ghost-border">
+            <span class="material-symbols-outlined text-4xl text-secondary mb-6 block">bolt</span>
+            <h2 class="text-2xl font-bold text-primary mb-4 tracking-tight">Elektryka</h2>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Bezpieczne i nowoczesne systemy zasilania, oświetlenia oraz automatyki domowej Smart Home.</p>
+            <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-3 text-xs text-on-surface"><span class="w-1 h-1 bg-secondary rounded-full inline-block"></span> Nowe instalacje elektryczne</li>
+                <li class="flex items-center gap-3 text-xs text-on-surface"><span class="w-1 h-1 bg-secondary rounded-full inline-block"></span> Pomiary i odbiory techniczne</li>
+                <li class="flex items-center gap-3 text-xs text-on-surface"><span class="w-1 h-1 bg-secondary rounded-full inline-block"></span> Montaż rozdzielni</li>
+            </ul>
+            <a href="kontakt.html" class="block bg-primary text-on-primary w-full py-3 font-bold text-sm rounded-md transition-all hover:opacity-90 text-center">Zamów usługę</a>
+        </div>
+        <!-- Instalacje gazowe -->
+        <div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-8 transition-all duration-500 hover:bg-surface-container-low ghost-border">
+            <span class="material-symbols-outlined text-4xl text-secondary mb-6 block">gas_meter</span>
+            <h2 class="text-2xl font-bold text-primary mb-4 tracking-tight">Instalacje gazowe</h2>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Certyfikowane usługi gazownicze z najwyższym priorytetem bezpieczeństwa użytkowników.</p>
+            <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-3 text-xs text-on-surface"><span class="w-1 h-1 bg-secondary rounded-full inline-block"></span> Próby szczelności gazu</li>
+                <li class="flex items-center gap-3 text-xs text-on-surface"><span class="w-1 h-1 bg-secondary rounded-full inline-block"></span> Montaż kotłów gazowych</li>
+                <li class="flex items-center gap-3 text-xs text-on-surface"><span class="w-1 h-1 bg-secondary rounded-full inline-block"></span> Przyłącza gazowe budynków</li>
+            </ul>
+            <a href="kontakt.html" class="block bg-primary text-on-primary w-full py-3 font-bold text-sm rounded-md transition-all hover:opacity-90 text-center">Zamów usługę</a>
+        </div>
+        <!-- Systemy grzewcze (Large Item) -->
+        <div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 md:p-12 transition-all duration-500 hover:bg-surface-container hover:shadow-lg ghost-border flex flex-col md:flex-row-reverse gap-8">
+            <div class="flex-1">
+                <span class="material-symbols-outlined text-5xl text-secondary mb-6 block">thermostat</span>
+                <h2 class="text-3xl font-bold text-primary mb-4 tracking-tight">Systemy grzewcze</h2>
+                <p class="text-on-surface-variant leading-relaxed mb-6">Efektywne ogrzewanie dopasowane do Twojego stylu życia. Specjalizujemy się w technologiach niskoemisyjnych i pompach ciepła.</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center gap-3 text-sm text-on-surface"><span class="w-1.5 h-1.5 bg-secondary-container rounded-full inline-block"></span> Montaż pomp ciepła powietrze-woda</li>
+                    <li class="flex items-center gap-3 text-sm text-on-surface"><span class="w-1.5 h-1.5 bg-secondary-container rounded-full inline-block"></span> Ogrzewanie podłogowe i ścienne</li>
+                    <li class="flex items-center gap-3 text-sm text-on-surface"><span class="w-1.5 h-1.5 bg-secondary-container rounded-full inline-block"></span> Modernizacja starych kotłowni</li>
+                </ul>
+                <a href="kontakt.html" class="inline-block bg-secondary-container text-on-secondary-container px-8 py-3 font-bold text-sm rounded-md shadow-sm transition-transform hover:scale-105 active:scale-95">Zamów usługę</a>
+            </div>
+            <div class="flex-1 rounded-lg overflow-hidden hidden md:block">
+                <img class="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3yF-IpSOQ_nYoOV7DhF9sf_9CJ4TV6NdyOZlCgyYZGmCEijG5ltkWhMCW1nGF2pOCVwUBrB8H40UIutqDLt34jgEf1U4W_hRUSMWkfeCHXRhrYyVLv1pBuhNdOzsNwbpAQnPGIqhqP1zwKOO9hYtnhN4fy8kxTcecqPUdaWAiJDIy1xdce5CvjO_JwzKc4T68p4phTlvLVnrhAUPJyDV8nr0GroYCpUTEhez8DYjix7ZpOXpWbc4yx8RsdwoA6fKtz_ZwkySpVtI" alt="Systemy grzewcze"/>
+            </div>
+        </div>
+        <!-- Montaż klimatyzacji -->
+        <div class="md:col-span-6 bg-surface-container-lowest rounded-xl p-8 transition-all duration-500 hover:bg-surface-container-low ghost-border">
+            <div class="flex items-start justify-between">
+                <div>
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6 block">ac_unit</span>
+                    <h2 class="text-2xl font-bold text-primary mb-4 tracking-tight">Montaż klimatyzacji</h2>
+                    <p class="text-on-surface-variant text-sm leading-relaxed mb-6 max-w-sm">Zapewnij sobie idealną temperaturę przez cały rok. Oferujemy montaż urządzeń klasy Premium z filtrami HEPA.</p>
+                </div>
+                <div class="hidden sm:block w-32 h-32 rounded-lg overflow-hidden flex-shrink-0">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB8njbiCtwgba4CvzWilmBBOQv9YVRNLm1p3Wuq2SjIT8FHR_oq6Hm6QKjW5Nk0HH3M5TcIaTVvCEu0vC3VJ66PyyYxBwOnIqspCQWpQYIuWwjFYySW-jLDmMzO3xDXamUDkVkuIgAw2xZrjkv5xKIiw289tyMae_QaE20ckjx3eU2SLD9Fr2x1dfcPQ0CbSpUDP3QkejIxx22eDN596H-URQqfu6upUsquTbVo260nIJhnGJepSu89Hhg-53XIOTrrc45ooofdzo" alt="Klimatyzacja"/>
+                </div>
+            </div>
+            <ul class="grid grid-cols-2 gap-4 mb-8">
+                <li class="flex items-center gap-2 text-xs text-on-surface"><span class="w-1 h-1 bg-secondary rounded-full inline-block"></span> Systemy Split i Multi-Split</li>
+                <li class="flex items-center gap-2 text-xs text-on-surface"><span class="w-1 h-1 bg-secondary rounded-full inline-block"></span> Serwis i odgrzybianie</li>
+                <li class="flex items-center gap-2 text-xs text-on-surface"><span class="w-1 h-1 bg-secondary rounded-full inline-block"></span> Klimatyzacja kanałowa</li>
+                <li class="flex items-center gap-2 text-xs text-on-surface"><span class="w-1 h-1 bg-secondary rounded-full inline-block"></span> Doradztwo projektowe</li>
+            </ul>
+            <a href="kontakt.html" class="block bg-primary text-on-primary w-full py-3 font-bold text-sm rounded-md transition-all hover:opacity-90 text-center">Zamów usługę</a>
+        </div>
+        <!-- Naprawy awaryjne -->
+        <div class="md:col-span-6 bg-tertiary-container text-white rounded-xl p-8 transition-all duration-500 hover:opacity-95 relative overflow-hidden">
+            <div class="absolute -right-4 -bottom-4 opacity-10">
+                <span class="material-symbols-outlined text-[180px]">emergency</span>
+            </div>
+            <div class="relative z-10">
+                <span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6 block">emergency</span>
+                <h2 class="text-2xl font-bold mb-4 tracking-tight">Naprawy awaryjne 24/7</h2>
+                <p class="text-tertiary-fixed-dim text-sm leading-relaxed mb-6 max-w-sm">Awaria gazu? Pęknięta rura? Brak prądu? Nasz zespół interwencyjny jest dostępny przez całą dobę, 7 dni w tygodniu.</p>
+                <ul class="space-y-2 mb-8">
+                    <li class="flex items-center gap-3 text-xs"><span class="material-symbols-outlined text-sm">check_circle</span> Szybki dojazd do 45 minut</li>
+                    <li class="flex items-center gap-3 text-xs"><span class="material-symbols-outlined text-sm">check_circle</span> Pogotowie gazowe i hydrauliczne</li>
+                    <li class="flex items-center gap-3 text-xs"><span class="material-symbols-outlined text-sm">check_circle</span> Specjalistyczny sprzęt diagnostyczny</li>
+                </ul>
+                <a href="tel:889868188" class="inline-block bg-white text-tertiary-container px-8 py-3 font-black text-sm rounded-md shadow-lg transition-transform hover:scale-105">ZADZWOŃ TERAZ: 889 868 188</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-6 mt-24">
+    <div class="bg-surface-container rounded-xl p-12 text-center">
+        <h3 class="text-2xl text-primary font-bold mb-4">Nie znalazłeś usługi, której potrzebujesz?</h3>
+        <p class="text-on-surface-variant max-w-xl mx-auto mb-8">Realizujemy również niestandardowe projekty i nietypowe instalacje przemysłowe. Skontaktuj się z nami, aby otrzymać darmową wycenę.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="kontakt.html" class="inline-block bg-primary text-on-primary px-10 py-4 font-bold rounded-md">Formularz kontaktowy</a>
+            <a href="o-firmie.html" class="inline-block border border-outline-variant px-10 py-4 font-bold rounded-md hover:bg-surface-container-high transition-colors">Nasze realizacje</a>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-auto bg-slate-100 border-t border-slate-200">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div>
+            <div class="text-lg font-bold text-slate-900 mb-4">Hydrokris-Complex</div>
+            <p class="text-slate-500 text-sm leading-relaxed max-w-xs">Twoje zaufane partnerstwo w inżynierii instalacyjnej. Jakość, która przepływa przez każdy projekt.</p>
+        </div>
+        <div class="flex flex-col gap-4">
+            <span class="text-slate-900 font-bold text-sm">Nawigacja</span>
+            <div class="flex flex-col gap-2">
+                <a class="text-slate-500 hover:text-orange-500 transition-colors duration-200 text-sm" href="index.html">Strona główna</a>
+                <a class="text-orange-600 font-bold text-sm" href="uslugi.html">Usługi</a>
+                <a class="text-slate-500 hover:text-orange-500 transition-colors duration-200 text-sm" href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4">
+            <span class="text-slate-900 font-bold text-sm">Prawne</span>
+            <div class="flex flex-col gap-2">
+                <a class="text-slate-500 hover:text-orange-500 transition-colors duration-200 text-sm" href="#">Polityka prywatności</a>
+                <a class="text-slate-500 hover:text-orange-500 transition-colors duration-200 text-sm" href="#">Regulamin</a>
+                <a class="text-slate-500 hover:text-orange-500 transition-colors duration-200 text-sm" href="#">Mapa strony</a>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200 text-center">
+        <p class="text-slate-500 text-sm">© 2024 Hydrokris-Complex. Wszelkie prawa zastrzeżone.</p>
+    </div>
+</footer>
+</body></html>

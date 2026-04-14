@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hydrokris-Complex – Hydraulika, Elektryka, Gaz w Krakowie</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "inverse-surface": "#2e3132",
+                    "on-surface-variant": "#44474d",
+                    "primary-fixed": "#d5e3ff",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-dim": "#d9dadb",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#e7e8e9",
+                    "background": "#f8f9fa",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#321300",
+                    "surface-bright": "#f8f9fa",
+                    "primary": "#021934",
+                    "secondary": "#994700",
+                    "on-primary-fixed": "#051c37",
+                    "primary-container": "#1a2e4a",
+                    "surface-variant": "#e1e3e4",
+                    "on-primary-fixed-variant": "#344765",
+                    "on-error-container": "#93000a",
+                    "outline": "#74777e",
+                    "on-secondary-container": "#632c00",
+                    "on-primary-container": "#8296b7",
+                    "outline-variant": "#c4c6ce",
+                    "inverse-on-surface": "#f0f1f2",
+                    "primary-fixed-dim": "#b4c7eb",
+                    "tertiary-container": "#630007",
+                    "surface-container": "#edeeef",
+                    "surface": "#f8f9fa",
+                    "on-tertiary-container": "#ff5e56",
+                    "surface-tint": "#4c5f7e",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#930010",
+                    "surface-container-low": "#f3f4f5",
+                    "on-tertiary-fixed": "#410003",
+                    "on-secondary-fixed-variant": "#743400",
+                    "secondary-fixed": "#ffdbc8",
+                    "secondary-fixed-dim": "#ffb68b",
+                    "inverse-primary": "#b4c7eb",
+                    "tertiary": "#3c0003",
+                    "on-surface": "#191c1d",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#ff8429",
+                    "tertiary-fixed-dim": "#ffb3ac",
+                    "on-background": "#191c1d",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-secondary": "#ffffff"
+                },
+                "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+                },
+                "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+                }
+            },
+        },
+    }
+</script>
+<style>
+    body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; color: #191c1d; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .text-display-lg { font-size: 3.5rem; line-height: 1.1; letter-spacing: -0.02em; font-weight: 800; }
+    .text-headline-md { font-size: 1.75rem; line-height: 1.3; font-weight: 700; }
+    .text-body-lg { font-size: 1rem; line-height: 1.6; }
+    .text-label-md { font-size: 0.75rem; line-height: 1; letter-spacing: 0.05em; font-weight: 600; text-transform: uppercase; }
+    .glass-header { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); }
+    .radial-navy { background: radial-gradient(circle at center, #1a2e4a, #021934); }
+    @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .animate-scroll { animation: scroll 30s linear infinite; display: flex; width: max-content; }
+</style>
+</head>
+<body class="bg-surface selection:bg-secondary-container selection:text-on-secondary-container">
+
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-header shadow-sm border-b border-outline-variant/10">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+    <a href="index.html" class="text-xl font-black tracking-tighter text-slate-900">Hydrokris-Complex</a>
+    <div class="hidden md:flex gap-8 items-center">
+        <a class="text-orange-600 font-bold border-b-2 border-orange-600 font-inter tracking-tight text-sm" href="index.html">Strona główna</a>
+        <a class="text-slate-600 hover:text-slate-900 transition-all duration-300 font-inter tracking-tight text-sm" href="o-firmie.html">O firmie</a>
+        <a class="text-slate-600 hover:text-slate-900 transition-all duration-300 font-inter tracking-tight text-sm" href="uslugi.html">Usługi</a>
+        <a class="text-slate-600 hover:text-slate-900 transition-all duration-300 font-inter tracking-tight text-sm" href="kontakt.html">Kontakt</a>
+        <a href="tel:889868188" class="bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-300 hover:opacity-80 flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">emergency_home</span>
+            Zadzwoń teraz
+        </a>
+    </div>
+    <button class="md:hidden text-primary">
+        <span class="material-symbols-outlined">menu</span>
+    </button>
+</nav>
+</header>
+
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden radial-navy py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row gap-16 items-center">
+        <div class="md:w-3/5">
+            <div class="flex items-center gap-2 mb-6">
+                <div class="flex text-secondary-container">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+                </div>
+                <span class="text-on-primary-container text-sm font-semibold">4.9/5 (80+ opinii)</span>
+            </div>
+            <h1 class="text-display-lg text-white mb-6">Szybkie i solidne usługi hydrauliczne, gazowe i elektryczne w Krakowie</h1>
+            <p class="text-body-lg text-on-primary-container mb-10 max-w-lg">Pogotowie awaryjne dostępne całą dobę — 7 dni w tygodniu. Profesjonalne wsparcie techniczne dla Twojego domu i firmy.</p>
+            <div class="flex flex-wrap gap-4">
+                <a href="tel:889868188" class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary/20 hover:opacity-90 transition-opacity">Zadzwoń teraz</a>
+                <a href="kontakt.html" class="border border-on-primary-container text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">Bezpłatna wycena</a>
+            </div>
+        </div>
+        <div class="md:w-2/5 w-full">
+            <div class="bg-surface-container-lowest p-8 rounded-xl shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <span class="material-symbols-outlined text-8xl">engineering</span>
+                </div>
+                <h3 class="text-headline-md mb-6 text-primary">Szybka wycena</h3>
+                <form class="space-y-4" action="kontakt.html">
+                    <div>
+                        <label class="text-label-md text-on-surface-variant block mb-1">Imię</label>
+                        <input class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4" placeholder="Twoje imię" type="text"/>
+                    </div>
+                    <div>
+                        <label class="text-label-md text-on-surface-variant block mb-1">Telefon</label>
+                        <input class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4" placeholder="+48 --- --- ---" type="tel"/>
+                    </div>
+                    <div>
+                        <label class="text-label-md text-on-surface-variant block mb-1">Rodzaj usługi</label>
+                        <select class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4">
+                            <option>Hydraulika</option>
+                            <option>Elektryka</option>
+                            <option>Gaz</option>
+                            <option>Klimatyzacja</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white py-4 rounded-lg font-bold mt-4 hover:bg-primary-container transition-colors">Wyślij zapytanie</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary/10 blur-[120px] rounded-full"></div>
+</section>
+
+<!-- Trust Bar -->
+<section class="bg-surface-container-low py-12">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="flex items-center gap-4 group">
+                <div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-secondary-container transition-colors">
+                    <span class="material-symbols-outlined">verified_user</span>
+                </div>
+                <span class="text-sm font-bold text-primary">Ponad 15 lat doświadczenia</span>
+            </div>
+            <div class="flex items-center gap-4 group">
+                <div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-secondary-container transition-colors">
+                    <span class="material-symbols-outlined">schedule</span>
+                </div>
+                <span class="text-sm font-bold text-primary">Pogotowie 24/7</span>
+            </div>
+            <div class="flex items-center gap-4 group">
+                <div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-secondary-container transition-colors">
+                    <span class="material-symbols-outlined">security</span>
+                </div>
+                <span class="text-sm font-bold text-primary">Licencjonowani i ubezpieczeni</span>
+            </div>
+            <div class="flex items-center gap-4 group">
+                <div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-secondary-container transition-colors">
+                    <span class="material-symbols-outlined">location_on</span>
+                </div>
+                <span class="text-sm font-bold text-primary">Kraków i okolice</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <span class="text-label-md text-secondary">Zakres usług</span>
+            <h2 class="text-display-lg text-primary mt-2">Kompleksowe rozwiązania techniczne</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+            <div class="bg-surface-container-low p-10 hover:bg-surface-container-high transition-colors">
+                <span class="material-symbols-outlined text-4xl text-secondary mb-6 block">plumbing</span>
+                <h3 class="text-headline-md text-primary mb-4">Hydraulika</h3>
+                <p class="text-on-surface-variant">Naprawa wycieków, montaż armatury, udrażnianie rur i modernizacje instalacji wodno-kanalizacyjnych.</p>
+            </div>
+            <div class="bg-surface-container-highest p-10 hover:bg-surface-container-high transition-colors">
+                <span class="material-symbols-outlined text-4xl text-secondary mb-6 block">bolt</span>
+                <h3 class="text-headline-md text-primary mb-4">Elektryka</h3>
+                <p class="text-on-surface-variant">Pomiary, montaż rozdzielni, nowe instalacje i szybkie usuwanie awarii prądu w Twoim domu.</p>
+            </div>
+            <div class="bg-surface-container-low p-10 hover:bg-surface-container-high transition-colors">
+                <span class="material-symbols-outlined text-4xl text-secondary mb-6 block">gas_meter</span>
+                <h3 class="text-headline-md text-primary mb-4">Instalacje gazowe</h3>
+                <p class="text-on-surface-variant">Kontrole szczelności, montaż kotłów i przyłączy gazowych z certyfikatem bezpieczeństwa.</p>
+            </div>
+            <div class="bg-surface-container-highest p-10 hover:bg-surface-container-high transition-colors">
+                <span class="material-symbols-outlined text-4xl text-secondary mb-6 block">heat_pump</span>
+                <h3 class="text-headline-md text-primary mb-4">Systemy grzewcze</h3>
+                <p class="text-on-surface-variant">Ogrzewanie podłogowe, pompy ciepła i serwis kotłowni gazowych dla maksymalnej wydajności.</p>
+            </div>
+            <div class="bg-surface-container-low p-10 hover:bg-surface-container-high transition-colors">
+                <span class="material-symbols-outlined text-4xl text-secondary mb-6 block">ac_unit</span>
+                <h3 class="text-headline-md text-primary mb-4">Montaż klimatyzacji</h3>
+                <p class="text-on-surface-variant">Profesjonalny dobór jednostek, montaż i serwis okresowy klimatyzacji split i multisplit.</p>
+            </div>
+            <div class="bg-tertiary-container p-10 group transition-all duration-300">
+                <span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6 block">emergency</span>
+                <h3 class="text-headline-md text-white mb-4">Naprawy awaryjne</h3>
+                <p class="text-on-primary-container">Działamy 24/7. Gdy liczy się czas, nasz zespół dojeżdża do klienta w trybie natychmiastowym.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Us Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-20 items-center">
+        <div class="md:w-1/2">
+            <img class="rounded-xl shadow-2xl scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtUfWvN5WH_TUcvfZ74Cc_3upbVFLvCoByS_AaeqFDoj55kbpFo_BUhYUgWJAPDDOGcyR7K4_x0mgyXv_2CjfZ5ruk2DBYNxDhgiQ2j3gUJbkHBsOFoYRvbPY9-AyNhu9BqrUkO3blM788AnhDUP7lW_gbA3h-J2cTl7aIN3NcrlZCuleZuZnL-uGH707VUE5na_nQfUWvFM6aHL3YU6-0mI19_JFGeQwMrm8oeHb72bv7_bfzz3PZC_nEh60n6m5D7UxocjbJNFI" alt="Profesjonalny sprzęt hydrauliczny"/>
+        </div>
+        <div class="md:w-1/2">
+            <span class="text-label-md text-secondary">Dlaczego my</span>
+            <h2 class="text-display-lg text-primary mt-4 mb-10">Standard jakości, któremu możesz zaufać</h2>
+            <div class="space-y-8">
+                <div class="flex gap-6">
+                    <span class="material-symbols-outlined text-secondary text-3xl">check_circle</span>
+                    <div>
+                        <h4 class="font-bold text-lg text-primary">Bez ukrytych kosztów</h4>
+                        <p class="text-on-surface-variant">Jasne zasady wyceny przed rozpoczęciem prac. Żadnych przykrych niespodzianek na fakturze.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <span class="material-symbols-outlined text-secondary text-3xl">speed</span>
+                    <div>
+                        <h4 class="font-bold text-lg text-primary">Szybki czas reakcji</h4>
+                        <p class="text-on-surface-variant">Lokalizacja w Krakowie pozwala nam dotrzeć do większości awarii w mniej niż 60 minut.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <span class="material-symbols-outlined text-secondary text-3xl">cleaning_services</span>
+                    <div>
+                        <h4 class="font-bold text-lg text-primary">Porządek po zakończeniu prac</h4>
+                        <p class="text-on-surface-variant">Szanujemy Twój dom. Po wykonanej usłudze zostawiamy miejsce pracy w nienagannym stanie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Emergency Banner -->
+<section class="bg-tertiary-container py-12 relative overflow-hidden">
+    <div class="absolute inset-0 bg-white/5 backdrop-blur-sm"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="text-center md:text-left">
+            <h2 class="text-2xl md:text-4xl font-black text-white">Awaria hydrauliczna lub gazowa?</h2>
+            <p class="text-on-tertiary-container text-lg font-medium">Działamy całą dobę — nie czekaj, aż problem się powiększy.</p>
+        </div>
+        <a class="bg-white text-tertiary-container px-10 py-5 rounded-lg text-2xl font-black tracking-tight hover:bg-on-tertiary-container hover:text-white transition-all flex items-center gap-3" href="tel:889868188">
+            <span class="material-symbols-outlined">call</span>
+            889 868 188
+        </a>
+    </div>
+</section>
+
+<!-- How We Work Section -->
+<section class="py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <span class="text-label-md text-secondary">Proces</span>
+            <h2 class="text-display-lg text-primary mt-2">Jak działamy?</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+            <div class="absolute top-1/2 left-0 w-full h-px bg-outline-variant/20 hidden md:block -z-10"></div>
+            <div class="bg-surface flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-black text-xl mb-6 shadow-xl">1</div>
+                <h3 class="text-headline-md mb-4">Opisz problem</h3>
+                <p class="text-on-surface-variant">Zadzwoń do nas lub wyślij zgłoszenie przez formularz. Krótki opis pozwoli nam dobrać odpowiedni sprzęt.</p>
+            </div>
+            <div class="bg-surface flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-black text-xl mb-6 shadow-xl">2</div>
+                <h3 class="text-headline-md mb-4">Otrzymaj wycenę</h3>
+                <p class="text-on-surface-variant">Nasz technik oceni sytuację i przedstawi transparentny kosztorys naprawy przed podjęciem działań.</p>
+            </div>
+            <div class="bg-surface flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-black text-xl mb-6 shadow-xl">3</div>
+                <h3 class="text-headline-md mb-4">Naprawiamy</h3>
+                <p class="text-on-surface-variant">Szybka i skuteczna realizacja usługi. Po zakończeniu otrzymasz gwarancję na wykonane prace.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Strip -->
+<section class="py-12 bg-surface-container-low overflow-hidden">
+    <div class="animate-scroll">
+        <img class="w-80 h-60 object-cover rounded-lg flex-shrink-0 mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqG2FSVk40KEiXN8Ak1SQAJr2--3n5qLgcrANKpJcIjlbGgbbtgutmFtsSFkoIG8RqwmxRbzhj7KTND4NIraxqPzmDtgSLOZmr-G0EWVhF7Y927hLSAMDRiHlqVqXxdMYkhYXuI8zCST5XMmBMIrnbvmBmoGT0zEGuJWw-LeNw5N7l5vagNdN2n9psCAys4tZtmNAxig_aGfBu71lZ667yd0Mcjbfqsi-BCjXRQrQgS5G7ozPBEEFD-ysv7-ggD9-azegoAM3Nw4I" alt="Instalacje miedziane"/>
+        <img class="w-80 h-60 object-cover rounded-lg flex-shrink-0 mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKTHPT0XhrE-bwrxDwXooGbGOH-qlgt75HnZYoXpb89Fcge6KBIY7_KoJhNcBhyVBUk_MGLCLfuP__nyLgdX3zYT4qaghNHxvp1vmHH0xAPjnsUg86yftgTpLwqq76-VGKq8fUp41RcGkr3chsOKPB20bNTVb5pDdXixHI8rJJ_n6jiD2nZbAmA_2aQjfrXEBVAa487RkmNa1yy_qel7HpitxN6B-Kl2mreNeI4WHzVc0_zEUWupNaXosmmKpet9CIqI1tEo7vkSk" alt="Rozdzielnia elektryczna"/>
+        <img class="w-80 h-60 object-cover rounded-lg flex-shrink-0 mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz0P9VbtyLLDlRgsRS6jWv1p8OjJYOYlGp93-S2fFDsbZxq0mulHTwkjGwbsNr6Xso6mtoomOT_u53gCu566J2XZi8WD-5jzkpPv3CJVve7UttwTgNO4jzzLOp1DWhfydaralDKSzD7pGRb-mp2wHcYOdZMLVt2UUm9JVxN4MC3VuWLOk1HUbowUpPjvhUTGSYRYiygoJUooJjnPjmnff5XD9pjbnYtCgwySgU5i8iOCn42t55MtChJXFI3Yh2Wp2nu8woWsU2rfI" alt="Łazienka premium"/>
+        <img class="w-80 h-60 object-cover rounded-lg flex-shrink-0 mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmYYcyTGF8LZ47an615IEXIcsvKDh0Ai2U4PgKbzsox__-xDaDiEER6kTvWJgFk1S_JIyC4-UhniqR4y-YzqnZrUOLf_BvPrDHzrVRYGD6uyA6QkTYa9rN5G_ire8Erud4zA3gpQC-hZeoTO44XeK6JD1oyBXS1l4IJ3QxLJ2TTVBDwHEAfjwcDJtcaYi9TiwuLYI30FMKnNvrBlgDp6OGF4tHeWl0819iktfu5m-TPIeXk7TU3lIByPlqDohfYM84IIf8wpQBPTw" alt="Narzędzia hydrauliczne"/>
+        <img class="w-80 h-60 object-cover rounded-lg flex-shrink-0 mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9f1GKoAmyrU4nHr-9me9c4qDuYyhXqXyW3y2_FrtGhDFJTcfeYkl-t1-TOwSXV4q-HWxHhsBJ2L06NdZn0LRVVuDXz3pt0HNZfiJhb9eVb3oQJ2cyNHbLN-nkFhOpdPgDTfpis_9SBiNnYhX6BAzjU0QGz1QTVsL1BTqu_4cxO31NwHClMMaL24qEBkTtLmC50wznl3bO3uM--2XIEQNWPT6TlhYLi_aYCRItTPBMAgWP8YGOeWu3evlEdC7-ZwTFVcA7p4BKewM" alt="Pompa ciepła"/>
+        <img class="w-80 h-60 object-cover rounded-lg flex-shrink-0 mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJYbNDTbU3YaU9NaIedx3zC8XLvi3ubSVENoz6a7wgKlQ7BcEM-XiDgM0_Kwd1elu0jQloAPSlHCmks11SNAFjeK40zfxSdUyE9MwgrU_LomyCPHm9uhW8yAkoSyCEioZ1eLnNvnraKZ4dBzaXAecTy0tJ3MQ3Ca3H8gbfYYkIyTZa79Fmv8uZMxRGYz-36OoPQn30RD6s9lvv-8fzN5oitYOBaMSXPU_lZ3fwtMwq_Jg223izCx-acmW3qSDcPrepyUhQfII_J3A" alt="Serwis kotłów"/>
+        <!-- duplicate for seamless loop -->
+        <img class="w-80 h-60 object-cover rounded-lg flex-shrink-0 mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqG2FSVk40KEiXN8Ak1SQAJr2--3n5qLgcrANKpJcIjlbGgbbtgutmFtsSFkoIG8RqwmxRbzhj7KTND4NIraxqPzmDtgSLOZmr-G0EWVhF7Y927hLSAMDRiHlqVqXxdMYkhYXuI8zCST5XMmBMIrnbvmBmoGT0zEGuJWw-LeNw5N7l5vagNdN2n9psCAys4tZtmNAxig_aGfBu71lZ667yd0Mcjbfqsi-BCjXRQrQgS5G7ozPBEEFD-ysv7-ggD9-azegoAM3Nw4I" alt="Instalacje miedziane"/>
+        <img class="w-80 h-60 object-cover rounded-lg flex-shrink-0 mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKTHPT0XhrE-bwrxDwXooGbGOH-qlgt75HnZYoXpb89Fcge6KBIY7_KoJhNcBhyVBUk_MGLCLfuP__nyLgdX3zYT4qaghNHxvp1vmHH0xAPjnsUg86yftgTpLwqq76-VGKq8fUp41RcGkr3chsOKPB20bNTVb5pDdXixHI8rJJ_n6jiD2nZbAmA_2aQjfrXEBVAa487RkmNa1yy_qel7HpitxN6B-Kl2mreNeI4WHzVc0_zEUWupNaXosmmKpet9CIqI1tEo7vkSk" alt="Rozdzielnia elektryczna"/>
+        <img class="w-80 h-60 object-cover rounded-lg flex-shrink-0 mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz0P9VbtyLLDlRgsRS6jWv1p8OjJYOYlGp93-S2fFDsbZxq0mulHTwkjGwbsNr6Xso6mtoomOT_u53gCu566J2XZi8WD-5jzkpPv3CJVve7UttwTgNO4jzzLOp1DWhfydaralDKSzD7pGRb-mp2wHcYOdZMLVt2UUm9JVxN4MC3VuWLOk1HUbowUpPjvhUTGSYRYiygoJUooJjnPjmnff5XD9pjbnYtCgwySgU5i8iOCn42t55MtChJXFI3Yh2Wp2nu8woWsU2rfI" alt="Łazienka premium"/>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <span class="text-label-md text-secondary">Opinie klientów</span>
+            <h2 class="text-display-lg text-primary mt-2">Zaufanie poparte efektami</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant/10">
+                <div class="flex text-secondary-container mb-4">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="text-body-lg text-on-surface mb-6 italic">"Pan Krzysztof przyjechał w niedzielę wieczorem do pękniętej rury. Szybko, sprawnie i bez naciągania. Polecam każdemu w Krakowie!"</p>
+                <span class="font-bold text-primary">— Marek Wiśniewski</span>
+            </div>
+            <div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant/10">
+                <div class="flex text-secondary-container mb-4">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="text-body-lg text-on-surface mb-6 italic">"Instalacja nowej kotłowni gazowej przebiegła wzorowo. Profesjonalne doradztwo i bardzo czysta praca. Firma godna zaufania."</p>
+                <span class="font-bold text-primary">— Anna Kowalska</span>
+            </div>
+            <div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant/10">
+                <div class="flex text-secondary-container mb-4">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="text-body-lg text-on-surface mb-6 italic">"Szybka pomoc przy awarii elektrycznej. Elektryk był u nas w 30 minut. Wszystko sprawdzone i bezpiecznie naprawione."</p>
+                <span class="font-bold text-primary">— Piotr Nowak</span>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-16 px-6 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div class="col-span-1 md:col-span-2">
+            <div class="text-2xl font-black tracking-tighter mb-6 text-white">Hydrokris-Complex</div>
+            <p class="text-slate-400 max-w-sm mb-6">Specjaliści od systemów domowych w Krakowie. Ponad 15 lat doświadczenia w branży hydraulicznej, elektrycznej i gazowej.</p>
+        </div>
+        <div>
+            <h4 class="font-bold mb-6 text-white uppercase tracking-widest text-xs">Usługi</h4>
+            <ul class="space-y-4 text-slate-400">
+                <li><a class="hover:text-orange-400 transition-colors" href="uslugi.html">Pogotowie hydrauliczne</a></li>
+                <li><a class="hover:text-orange-400 transition-colors" href="uslugi.html">Instalacje gazowe</a></li>
+                <li><a class="hover:text-orange-400 transition-colors" href="uslugi.html">Usługi elektryczne</a></li>
+                <li><a class="hover:text-orange-400 transition-colors" href="uslugi.html">Klimatyzacja</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-6 text-white uppercase tracking-widest text-xs">Kontakt</h4>
+            <ul class="space-y-4 text-slate-400">
+                <li class="flex items-center gap-3"><span class="material-symbols-outlined text-sm">call</span> 889 868 188</li>
+                <li class="flex items-center gap-3"><span class="material-symbols-outlined text-sm">mail</span> kontakt@hydrokris.pl</li>
+                <li class="flex items-center gap-3"><span class="material-symbols-outlined text-sm">location_on</span> Kraków, Małopolska</li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+        <p>© 2024 Hydrokris-Complex. Wszelkie prawa zastrzeżone.</p>
+        <div class="flex gap-8">
+            <a class="hover:text-white transition-colors" href="#">Polityka prywatności</a>
+            <a class="hover:text-white transition-colors" href="#">Regulamin</a>
+            <a class="hover:text-white transition-colors" href="#">Mapa strony</a>
+        </div>
+    </div>
+</footer>
+</body></html>
